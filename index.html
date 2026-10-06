@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>株式会社イテレーション | ITERATION, K.K.</title>
+  <meta name="description" content="株式会社イテレーションは、パーソナルトレーニングジムの運営、経営アドバイザリー、ソフトウェアの開発・販売を行っています。">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://iteration.co.jp/">
+  <style>
+    :root {
+      --bg: #fbfaf8;
+      --surface: #ffffff;
+      --text: #1d1d1f;
+      --muted: #6e6e73;
+      --line: #e3e1dc;
+      --accent: #2f5d50;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #141414;
+        --surface: #1c1c1e;
+        --text: #f2f2f2;
+        --muted: #a1a1a6;
+        --line: #333336;
+        --accent: #8cc4b0;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Segoe UI", sans-serif;
+      line-height: 1.75;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+    header { padding: 88px 0 56px; }
+    .mark {
+      font-size: clamp(2.2rem, 7vw, 3.4rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      margin: 0;
+    }
+    .mark span { color: var(--accent); }
+    .jp-name { margin: 12px 0 0; color: var(--muted); font-size: 1rem; }
+    .lead { margin: 40px 0 0; font-size: 1.05rem; }
+    .lead-en { margin: 4px 0 0; color: var(--muted); font-size: 0.95rem; }
+    section { padding: 40px 0 72px; border-top: 1px solid var(--line); }
+    h2 { font-size: 1.1rem; margin: 0 0 24px; letter-spacing: 0.04em; }
+    h2 small { color: var(--muted); font-weight: 400; margin-left: 10px; font-size: 0.85rem; }
+    dl { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; }
+    .row { display: grid; grid-template-columns: 180px 1fr; gap: 16px; padding: 18px 24px; border-top: 1px solid var(--line); }
+    .row:first-child { border-top: 0; }
+    dt { color: var(--muted); font-size: 0.9rem; }
+    dt .en { display: block; font-size: 0.78rem; }
+    dd { margin: 0; }
+    dd .en { display: block; color: var(--muted); font-size: 0.9rem; }
+    dd ul { margin: 0; padding: 0; list-style: none; }
+    dd li + li { margin-top: 8px; }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    footer { padding: 32px 0 48px; color: var(--muted); font-size: 0.85rem; border-top: 1px solid var(--line); }
+    @media (max-width: 560px) {
+      header { padding: 56px 0 40px; }
+      .row { grid-template-columns: 1fr; gap: 4px; padding: 16px 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <p class="mark">Iteration<span>.</span></p>
+      <p class="jp-name">株式会社イテレーション</p>
+      <p class="lead">パーソナルトレーニングジムの運営と、ソフトウェアの開発を行っています。</p>
+      <p class="lead-en" lang="en">We operate personal training gyms and develop software.</p>
+    </header>
+
+    <section aria-labelledby="company">
+      <h2 id="company">会社概要<small lang="en">Company</small></h2>
+      <dl>
+        <div class="row">
+          <dt>商号<span class="en" lang="en">Company name</span></dt>
+          <dd>株式会社イテレーション<span class="en" lang="en">ITERATION, K.K.</span></dd>
+        </div>
+        <div class="row">
+          <dt>代表者<span class="en" lang="en">Representative</span></dt>
+          <dd>代表取締役 香月 雄介<span class="en" lang="en">Yusuke Katsuki, Representative Director</span></dd>
+        </div>
+        <div class="row">
+          <dt>所在地<span class="en" lang="en">Location</span></dt>
+          <dd>東京都世田谷区<span class="en" lang="en">Setagaya-ku, Tokyo, Japan</span></dd>
+        </div>
+        <div class="row">
+          <dt>事業内容<span class="en" lang="en">Business</span></dt>
+          <dd>
+            <ul>
+              <li>パーソナルトレーニングジムの運営<span class="en" lang="en">Operation of personal training gyms</span></li>
+              <li>経営に関するアドバイザリー<span class="en" lang="en">Business advisory services</span></li>
+              <li>ソフトウェアの開発・販売<span class="en" lang="en">Software development and sales</span></li>
+            </ul>
+          </dd>
+        </div>
+        <div class="row">
+          <dt>お問い合わせ<span class="en" lang="en">Contact</span></dt>
+          <dd id="contact">info [at] iteration.co.jp</dd>
+        </div>
+      </dl>
+    </section>
+
+    <footer>
+      &copy; 2026 ITERATION, K.K.
+    </footer>
+  </div>
+  <script>
+    // Assemble the address at runtime so it isn't in the HTML for scrapers.
+    (function () {
+      var addr = ["info", "iteration.co.jp"].join("@");
+      var a = document.createElement("a");
+      a.href = "mailto:" + addr;
+      a.textContent = addr;
+      var dd = document.getElementById("contact");
+      dd.textContent = "";
+      dd.appendChild(a);
+    })();
+  </script>
+</body>
+</html>
